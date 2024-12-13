@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="grey">#F4F4F4</color>
+    <color name="grey_darker">#717171</color>
+    <color name="cat_ph_color">#FFC1B6</color>
+    <color name="promo_status">#FFA033</color>
+    <color name="promo_percent">#FF4231</color>
+    <color name="promo_selector">#FFD334</color>
+
+</resources>

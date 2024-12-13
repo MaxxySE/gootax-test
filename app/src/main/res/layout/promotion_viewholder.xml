@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/promo_view"
+    android:layout_width="wrap_content"
+    android:layout_height="240dp"
+    android:gravity="center_horizontal"
+    android:background="@drawable/rounded_background"
+    android:backgroundTint="@color/grey"
+    android:layout_margin="4dp"
+    android:padding="4dp"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="120dp"
+        android:layout_height="120dp">
+
+        <ImageView
+            android:id="@+id/promo_view_image"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/promo_ph"
+            android:scaleType="fitCenter"
+            android:adjustViewBounds="true"
+            android:contentDescription="@string/promo_image_description" />
+
+        <TextView
+            android:id="@+id/promo_view_percent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/promo_view_percentage"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentStart="true"
+            android:fontFamily="@font/sf_display_regular"
+            android:background="@drawable/rounded_background"
+            android:backgroundTint="@color/promo_percent"
+            android:textColor="@color/white"
+            android:paddingStart="4dp"
+            android:paddingEnd="4dp"
+            android:paddingBottom="2dp"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/promo_view_status"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/promo_view_status"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:fontFamily="@font/sf_display_regular"
+            android:background="@drawable/rounded_background"
+            android:backgroundTint="@color/promo_status"
+            android:textColor="@color/white"
+            android:paddingStart="4dp"
+            android:paddingEnd="4dp"
+            android:paddingBottom="2dp"
+            android:textSize="12sp"
+            tools:ignore="RelativeOverlap" />
+
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/promo_view_title"
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:text="@string/promo_view_title_test"
+        android:textSize="12sp"
+        android:fontFamily="@font/sf_display_regular"
+        android:textColor="@color/black"
+        android:maxLines="3"
+        android:ellipsize="end"/>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_gravity="start">
+
+        <TextView
+            android:id="@+id/promo_view_weight"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/promo_view_weight"
+            android:fontFamily="@font/sf_display_regular"
+            android:textSize="12sp"
+            android:textColor="@color/grey_darker" />
+
+        <TextView
+            android:id="@+id/promo_view_hiddenprice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/promo_view_price"
+            android:fontFamily="@font/sf_display_regular"
+            android:layout_marginStart="6dp"
+            android:textSize="12sp"
+            android:textColor="@color/grey_darker"
+            android:visibility="invisible" />
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"/>
+
+    <LinearLayout
+        android:id="@+id/promo_view_selected"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:visibility="gone"
+        android:background="@drawable/rounded_background_promo"
+        android:backgroundTint="@color/promo_selector"
+        android:gravity="bottom"
+        android:layout_marginTop="8dp"
+        android:padding="3dp">
+
+        <ImageView
+            android:id="@+id/promo_view_remove"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/baseline_remove_24"
+            android:contentDescription="@string/promo_remove_description"
+            android:layout_gravity="center_vertical" />
+
+        <TextView
+            android:id="@+id/promo_view_amount"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/promo_view_amount"
+            android:gravity="center"
+            android:textSize="16sp"
+            android:fontFamily="@font/sf_display_bold" />
+
+        <ImageView
+            android:id="@+id/promo_view_addmore"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/baseline_add_24"
+            android:contentDescription="@string/promo_add_description"
+            android:layout_gravity="center_vertical" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/promo_view_unselected"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:gravity="bottom"
+        android:visibility="visible"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/promo_view_discount_price"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/promo_view_discount"
+                android:textColor="@color/promo_percent"
+                android:textSize="12sp"
+                android:foreground="@drawable/striketrough"
+                android:fontFamily="@font/sf_display_regular" />
+
+            <TextView
+                android:id="@+id/promo_view_price"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/promo_view_price"
+                android:textColor="@color/black"
+                android:textSize="16sp"
+                android:fontFamily="@font/sf_display_regular" />
+
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/promo_view_add"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/add_button"
+            android:background="@drawable/rounded_background_promo"
+            android:padding="8dp"
+            android:backgroundTint="@color/promo_selector"
+            android:contentDescription="@string/promo_add_description" />
+
+    </LinearLayout>
+
+</LinearLayout>

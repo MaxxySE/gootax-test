@@ -1,0 +1,61 @@
+<resources>
+    <string name="app_name">Gootax_Test</string>
+
+    <!-- Home Fragment -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="order_type_delivery">Доставка</string>
+    <string name="order_type_takeaway">Самовывоз</string>
+    <string name="order_address_ph">Выберите адрес</string>
+    <string name="edittext_search_goods_hint">Поиск товаров</string>
+
+    <string name="rec_title_ph">Название</string>
+
+    <string name="promo_section_title">Акции</string>
+    <string name="promo_section_button">Смотреть все</string>
+    <string name="promo_view_percentage">-25%</string>
+    <string name="promo_view_status">Новинка</string>
+    <string name="promo_view_title">Название</string>
+    <string name="promo_view_title_test">Название блюда в несколько строк для проверки</string>
+    <string name="promo_view_discount">750 ₽</string>
+    <string name="promo_view_price">360 ₽</string>
+    <string name="promo_view_weight">300 г</string>
+    <string name="promo_view_amount">1</string>
+
+    <string name="catalog_section_title">Каталог</string>
+    <string name="catalog_view_title">Название</string>
+
+    <!-- Navigation Bar -->
+    <string name="navigation_username">Имя Фамилия</string>
+    <string name="navigation_phone">+7 800 555–35–35</string>
+    <string name="navigation_payment">Оплата</string>
+    <string name="navigation_payment_type">Карта *4567</string>
+    <string name="navigation_user_addresses">Мои адреса</string>
+    <string name="navigation_user_orders">Мои заказы</string>
+    <string name="navigation_user_favourites">Избранное</string>
+    <string name="navigation_news">Новости</string>
+    <string name="navigation_user_coupons">Купоны</string>
+    <string name="navigation_about">О нас</string>
+    <string name="navigation_referral">Пригласить друзей</string>
+    <string name="navigation_settings">Настройки</string>
+    <string name="navigation_contact">Связаться\nс нами</string>
+
+    <!-- Search Modal Fragment -->
+    <string name="searchmodal_edittext_hint">Введите ваш адрес</string>
+    <string name="searchmodal_current_location">Текущее местоположение</string>
+    <string name="searchmodal_street">Улица, Дом</string>
+    <string name="searchmodal_details">Ижевск, республика Удмуртия, Россия</string>
+
+    <!-- Content Descriptions -->
+    <string name="nav_button_description">Navigation Button</string>
+    <string name="address_selector_description">Address Selector</string>
+    <string name="fav_button_description">Favourite Button</string>
+    <string name="cat_image_description">Catalog Image Placeholder</string>
+    <string name="rec_image_description">Recommendation Image Placeholder</string>
+    <string name="promo_image_description">Promotion Image Placeholder</string>
+    <string name="promo_add_description">Add Button Placeholder</string>
+    <string name="promo_remove_description">Remove Button Placeholder</string>
+    <string name="search_item_icon_description">Item Navigation Icon</string>
+    <string name="banner_image_description">Banner Image Description</string>
+    <string name="promo_section_icon">Promo Section Icon</string>
+
+</resources>
