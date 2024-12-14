@@ -3,11 +3,7 @@
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     android:orientation="horizontal"
-    android:padding="16dp"
-    android:layout_marginStart="14dp"
-    android:layout_marginEnd="14dp"
-    android:layout_marginTop="14dp"
-    android:fitsSystemWindows="true">
+    android:layout_margin="14dp">
 
     <de.hdodenhof.circleimageview.CircleImageView
         android:id="@+id/header_image"
@@ -19,7 +15,7 @@
     <LinearLayout
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="32dp"
+        android:layout_marginStart="24dp"
         android:orientation="vertical"
         android:layout_gravity="center_vertical">
 
@@ -29,7 +25,7 @@
             android:layout_height="wrap_content"
             android:text="@string/navigation_username"
             android:textColor="@android:color/black"
-            android:textSize="16sp"
+            android:textSize="14sp"
             android:fontFamily="@font/sf_display_medium" />
 
         <TextView
@@ -38,7 +34,7 @@
             android:layout_height="wrap_content"
             android:text="@string/navigation_phone"
             android:textColor="@android:color/black"
-            android:textSize="16sp"
+            android:textSize="14sp"
             android:fontFamily="@font/sf_display_regular" />
 
     </LinearLayout>

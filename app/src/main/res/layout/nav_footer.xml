@@ -3,8 +3,7 @@
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     android:orientation="horizontal"
-    android:layout_marginStart="14dp"
-    android:layout_marginBottom="50dp"
+    android:layout_margin="14dp"
     android:gravity="center_vertical">
 
     <ImageView
@@ -18,7 +17,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/navigation_contact"
-        android:textSize="16sp"
+        android:textSize="14sp"
         android:layout_marginStart="14dp"
         android:textColor="@android:color/black"/>
 </LinearLayout>

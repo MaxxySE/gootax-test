@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- Размеры изображений -->
+    <dimen name="promo_image_size">100dp</dimen>
+
+    <!-- Размеры иконок -->
+    <dimen name="icon_size">20dp</dimen>
+
+    <!-- Отступы -->
+    <dimen name="padding_small">2dp</dimen>
+    <dimen name="padding_medium">6dp</dimen>
+    <dimen name="padding_bottom_small">1dp</dimen>
+
+    <!-- Размеры текста -->
+    <dimen name="text_size_small">10sp</dimen>
+    <dimen name="text_size_large">14sp</dimen>
+
+    <!-- Другие размеры -->
+    <dimen name="layout_margin">2dp</dimen>
+    <dimen name="layout_height_promo_view">200dp</dimen>
+    <dimen name="promo_title_width">100dp</dimen>
+
+</resources>

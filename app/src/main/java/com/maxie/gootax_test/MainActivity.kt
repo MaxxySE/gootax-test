@@ -2,11 +2,13 @@ package com.maxie.gootax_test
 
 import android.annotation.SuppressLint
 import android.os.Bundle
+import android.view.View
 import android.widget.Toast
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
+import androidx.core.view.updatePadding
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.maxie.gootax_test.data.repositories.NavRepository
 import com.maxie.gootax_test.databinding.ActivityMainBinding
@@ -27,8 +29,21 @@ class MainActivity : AppCompatActivity() {
             insets
         }
 
+        setHeaderPadding()
         setNavRecycler()
 
+    }
+
+    private fun setHeaderPadding() {
+        binding.headerView.headerLayout.applySystemBarInsets()
+    }
+
+    private fun View.applySystemBarInsets() {
+        ViewCompat.setOnApplyWindowInsetsListener(this) { view, insets ->
+            val systemBarInsets = insets.getInsets(WindowInsetsCompat.Type.systemBars())
+            view.updatePadding(top = systemBarInsets.top)
+            insets
+        }
     }
 
     @SuppressLint("SetTextI18n")

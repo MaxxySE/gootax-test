@@ -1,4 +1,25 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <dimen name="margin_start_end">10dp</dimen>
+
+    <!-- Размеры изображений -->
+    <dimen name="promo_image_size">120dp</dimen>
+
+    <!-- Размеры иконок -->
+    <dimen name="icon_size">24dp</dimen>
+
+    <!-- Отступы -->
+    <dimen name="padding_small">4dp</dimen>
+    <dimen name="padding_medium">8dp</dimen>
+    <dimen name="padding_bottom_small">2dp</dimen>
+
+    <!-- Размеры текста -->
+    <dimen name="text_size_small">12sp</dimen>
+    <dimen name="text_size_large">16sp</dimen>
+
+    <!-- Другие размеры -->
+    <dimen name="layout_margin">4dp</dimen>
+    <dimen name="layout_height_promo_view">244dp</dimen>
+    <dimen name="promo_title_width">120dp</dimen>
+
 </resources>
