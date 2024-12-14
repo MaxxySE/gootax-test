@@ -3,7 +3,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/promo_view"
     android:layout_width="wrap_content"
-    android:layout_height="240dp"
+    android:layout_height="244dp"
     android:gravity="center_horizontal"
     android:background="@drawable/rounded_background"
     android:backgroundTint="@color/grey"
@@ -114,7 +114,7 @@
         android:backgroundTint="@color/promo_selector"
         android:gravity="bottom"
         android:layout_marginTop="8dp"
-        android:padding="3dp">
+        android:padding="4dp">
 
         <ImageView
             android:id="@+id/promo_view_remove"
@@ -184,9 +184,9 @@
             android:id="@+id/promo_view_add"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:src="@drawable/add_button"
+            android:src="@drawable/baseline_add_24"
             android:background="@drawable/rounded_background_promo"
-            android:padding="8dp"
+            android:padding="4dp"
             android:backgroundTint="@color/promo_selector"
             android:contentDescription="@string/promo_add_description" />
 

@@ -1,11 +1,17 @@
 package com.maxie.gootax_test.api
 
-import com.maxie.gootax_test.fragments.home.entities.SearchViewData
-import retrofit2.http.GET
+import okhttp3.ResponseBody
+import retrofit2.Response
+import retrofit2.http.Body
+import retrofit2.http.Header
+import retrofit2.http.POST
 
 interface ApiService {
 
-    @GET("search")
-    suspend fun getSearchData(): List<SearchViewData>
+    @POST("suggestions/api/4_1/rs/suggest/address")
+    suspend fun suggestAddress(
+        @Header("Authorization") token: String,
+        @Body query: Map<String, String>
+    ): Response<ResponseBody>
 
 }

@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".fragments.home.modal.search.SearchFragment"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    android:background="@drawable/rounded_background"
+    android:backgroundTint="@color/white">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginStart="14dp"
+        android:layout_marginEnd="14dp"
+        android:layout_marginBottom="14dp"
+        android:layout_marginTop="24dp">
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp">
+
+            <EditText
+                android:id="@+id/search_edittext"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/searchmodal_edittext_hint"
+                android:drawableStart="@drawable/search_button"
+                android:drawablePadding="14dp"
+                android:importantForAutofill="no"
+                android:inputType="text"
+                android:paddingBottom="16dp"
+                android:paddingEnd="40dp"
+                android:textColor="@color/black"
+                tools:ignore="RtlSymmetry" />
+            
+            <ImageView
+                android:id="@+id/clear_search_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/clear_button"
+                android:paddingEnd="12dp"
+                android:visibility="gone"
+                android:layout_gravity="right|center_vertical"
+                tools:ignore="RtlHardcoded,RtlSymmetry"
+                android:contentDescription="@string/promo_remove_description"/>
+
+        </FrameLayout>
+
+
+
+        <LinearLayout
+            android:id="@+id/current_location_button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="8dp"
+            android:paddingBottom="8dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            tools:ignore="UseCompoundDrawables">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/current_location"
+                android:contentDescription="@string/search_current_location_icon"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:text="@string/searchmodal_current_location"
+                android:fontFamily="@font/sf_display_regular"
+                android:textColor="@color/black"
+                android:textSize="16sp"/>
+
+        </LinearLayout>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/search_recycle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:overScrollMode="never"
+            android:scrollbars="none"/>
+
+    </LinearLayout>
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>
+

@@ -25,7 +25,7 @@
     <string name="catalog_view_title">Название</string>
 
     <!-- Navigation Bar -->
-    <string name="navigation_username">Имя Фамилия</string>
+    <string name="navigation_username">Иван Иванов</string>
     <string name="navigation_phone">+7 800 555–35–35</string>
     <string name="navigation_payment">Оплата</string>
     <string name="navigation_payment_type">Карта *4567</string>
@@ -57,5 +57,7 @@
     <string name="search_item_icon_description">Item Navigation Icon</string>
     <string name="banner_image_description">Banner Image Description</string>
     <string name="promo_section_icon">Promo Section Icon</string>
+    <string name="search_current_location_icon">Current Location Icon</string>
+    <string name="profile_image_description">Profile Photo Placeholder</string>
 
 </resources>

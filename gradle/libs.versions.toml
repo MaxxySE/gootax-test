@@ -14,6 +14,8 @@ dagger = "2.48"
 retrofit = "2.9.0"
 okhttp = "4.10.0"
 glide = "4.15.1"
+coordinatorlayout = "1.2.0"
+circleimageview = "3.1.0"
 
 
 [libraries]
@@ -35,6 +37,8 @@ okhttp-logging-interceptor = { group = "com.squareup.okhttp3", name = "logging-i
 okhttp = { group = "com.squareup.okhttp3", name = "okhttp", version.ref = "okhttp" }
 glide = { group = "com.github.bumptech.glide", name = "glide", version.ref = "glide" }
 glide-compiler = { group = "com.github.bumptech.glide", name = "compiler", version.ref = "glide" }
+androidx-coordinatorlayout = { group = "androidx.coordinatorlayout", name = "coordinatorlayout", version.ref = "coordinatorlayout" }
+circleimageview = { group = "de.hdodenhof", name = "circleimageview", version.ref = "circleimageview" }  # Добавленная строка
 
 
 [plugins]
