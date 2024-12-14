@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <dimen name="margin_start_end">8dp</dimen>
+
+    <dimen name="rec_view_image_size">50dp</dimen>
+    <dimen name="rec_view_text_size">10sp</dimen>
+
+    <dimen name="promo_relative_size">90dp</dimen>
+    <dimen name="promo_linear_height">200dp</dimen>
+    <dimen name="promo_padding_small">4dp</dimen>
+    <dimen name="promo_padding_micro">2dp</dimen>
+    <dimen name="promo_padding_medium">6dp</dimen>
+    <dimen name="promo_button_size">24dp</dimen>
+
+    <dimen name="text_small">10sp</dimen>
+    <dimen name="text_medium">12sp</dimen>
+
+    <dimen name="text_default">12sp</dimen>
+
+    <dimen name="avatar_image_size">54dp</dimen>
+
+</resources>

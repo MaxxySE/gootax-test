@@ -37,5 +37,6 @@
         android:fontFamily="@font/sf_display_bold"
         android:ellipsize="end"
         android:maxLines="2"
+        android:textSize="@dimen/text_default"
         android:textAlignment="center" />
 </LinearLayout>

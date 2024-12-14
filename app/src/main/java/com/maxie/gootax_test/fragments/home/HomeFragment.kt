@@ -103,6 +103,8 @@ class HomeFragment : Fragment(R.layout.fragment_home) {
 
         binding.recommendedRecycler.adapter = adapter
 
+        binding.recommendedRecycler.setHasFixedSize(false)
+
     }
 
     private fun setBannersRecycler(){

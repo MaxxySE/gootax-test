@@ -8,8 +8,8 @@
 
     <ImageView
         android:id="@+id/rec_image"
-        android:layout_width="70dp"
-        android:layout_height="70dp"
+        android:layout_width="@dimen/rec_view_image_size"
+        android:layout_height="@dimen/rec_view_image_size"
         android:src="@drawable/rec_ph"
         android:scaleType="fitCenter"
         android:adjustViewBounds="true"
@@ -28,7 +28,7 @@
         android:layout_height="wrap_content"
         android:text="@string/rec_title_ph"
         android:textColor="@color/black"
-        android:textSize="12sp"
+        android:textSize="@dimen/rec_view_text_size"
         android:fontFamily="@font/sf_display_regular"
         android:gravity="center"
         android:ellipsize="end"
