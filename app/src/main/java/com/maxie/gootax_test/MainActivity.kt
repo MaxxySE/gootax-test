@@ -29,19 +29,22 @@ class MainActivity : AppCompatActivity() {
             insets
         }
 
-        setHeaderPadding()
+        setPaddings()
         setNavRecycler()
 
     }
 
-    private fun setHeaderPadding() {
-        binding.headerView.headerLayout.applySystemBarInsets()
+    private fun setPaddings() {
+        binding.headerView.headerLayout.applySystemInsets(top = true)
     }
 
-    private fun View.applySystemBarInsets() {
+    private fun View.applySystemInsets(bottom: Boolean = false, top: Boolean = false) {
         ViewCompat.setOnApplyWindowInsetsListener(this) { view, insets ->
             val systemBarInsets = insets.getInsets(WindowInsetsCompat.Type.systemBars())
-            view.updatePadding(top = systemBarInsets.top)
+            view.updatePadding(
+                top = if (top) systemBarInsets.top else 0,
+                bottom = if (bottom) systemBarInsets.bottom else 0
+            )
             insets
         }
     }
